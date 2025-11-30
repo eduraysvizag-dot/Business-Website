@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-Rays - Global Tuition & Holistic Learning Centre</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="page-loader">
+        <div class="book">
+            <div class="book__pg-shadow"></div>
+            <div class="book__pg"></div>
+            <div class="book__pg book__pg--2"></div>
+            <div class="book__pg book__pg--3"></div>
+            <div class="book__pg book__pg--4"></div>
+            <div class="book__pg book__pg--5"></div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Edu-rays Logo">
+            </a>
+            <button class="menu-btn">
+                <img src="images/menu-logo.png" alt="Menu" class="menu-icon">
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="education.html" data-i18n="nav_education">Education</a></li>
+                    <li><a href="skills.html" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="art-music.html" data-i18n="nav_art_music">Art & Music</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" data-i18n="nav_login">Login ▾</a>
+                        <div class="dropdown-content">
+                            <a href="student-login.html" data-i18n="login_student">Student Login</a>
+                            <a href="parent-login.html" data-i18n="login_parent">Parent Login</a>
+                            <a href="teacher-login.html" data-i18n="login_teacher">Teacher Login</a>
+                        </div>
+                    </li>
+                    <li class="language-selector">
+                        <label for="languageSelect" class="sr-only">Select Language</label>
+                        <select id="languageSelect" title="Select Language">
+                            <option value="en">English</option>
+                            <option value="hi">हिंदी (Hindi)</option>
+                            <option value="te">తెలుగు (Telugu)</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/hero-learning.jpg" alt="Learning">
+                <div class="slide-text">
+                    <h1>Learn Beyond Boundaries</h1>
+                    <p>For kids, teens, and adults!</p>
+                    <a href="contact.html" class="btn">Free Demo</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero-music.jpg" alt="Music">
+                <div class="slide-text">
+                    <h1>Discover Your Talent</h1>
+                    <p>Music, Arts, and More!</p>
+                    <a href="contact.html" class="btn">Join Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero-studying.jpg" alt="Studying">
+                <div class="slide-text">
+                    <h1>Learn with Confidence</h1>
+                    <p>Education for Young Minds</p>
+                    <a href="contact.html" class="btn">Enroll Today</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero-experimenting.jpg" alt="Science">
+                <div class="slide-text">
+                    <h1>Explore and Discover</h1>
+                    <p>Science and Experiments</p>
+                    <div class="drive-links">
+                        <a href="education.html" class="resource-btn">Download Textbooks</a>
+                        <a href="#" class="resource-btn" onclick="alert('Link coming soon!')">PYQs & Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="about_title">About Edu-Rays</h2>
+                <p data-i18n="about_subtitle">A Global Tuition & Holistic Learning Centre Based in Vizag</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Edu-Rays is a growing educational institution that combines personalized academic coaching with a
+                        wide range of holistic development programs. Founded by a passionate educator,
+                        Edu-Rays has steadily expanded from its base in <strong>Visakhapatnam (Vizag), India</strong>,
+                        to teaching students across <strong>India, Singapore, Australia</strong>,
+                        and other international regions.</p>
+                    <p>With its strong commitment to individualized attention, structured learning, and all-round
+                        development,
+                        Edu-Rays has become a trusted destination for families seeking high-quality education.</p>
+                    <!-- PHOTO PLACEHOLDER: Add a photo of the founder or main classroom here -->
+                </div>
+                <div class="about-image">
+                    <img src="images/index_1.png" alt="Edu-Rays Learning Environment">
+                    <!-- PHOTO: Replace with actual classroom or students photo -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach Section -->
+    <section class="section global-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="global_title">Global Reach Anchored in Strong Local Foundations</h2>
+            </div>
+            <div class="global-content">
+                <p data-i18n="global_desc">Though headquartered in Vizag, Edu-Rays caters to students worldwide through a robust hybrid model:
+                </p>
+                <div class="global-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏫</div>
+                        <h3 data-i18n="feature_offline">Offline Classroom Programs</h3>
+                        <p data-i18n="feature_offline_desc">At the Vizag centre with personalized attention</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3 data-i18n="feature_online">Live Online Sessions</h3>
+                        <p data-i18n="feature_online_desc">For international and out-station learners</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3 data-i18n="feature_curriculum">Curriculum-Aligned Tutoring</h3>
+                        <p data-i18n="feature_curriculum_desc">For different educational boards</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⏰</div>
+                        <h3 data-i18n="feature_scheduling">Adaptable Scheduling</h3>
+                        <p data-i18n="feature_scheduling_desc">For various time zones and learning needs</p>
+                    </div>
+                </div>
+                <!-- PHOTO PLACEHOLDER: Add a photo showing online/offline learning here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalized Learning Section -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="personalized_title">Personalized Learning Through Low Student–Teacher Ratio</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/index_2.png" alt="Personalized Learning at Edu-Rays">
+                    <!-- PHOTO: Replace with actual photo of small group teaching -->
+                </div>
+                <div class="about-text">
+                    <p>Edu-Rays is known for maintaining a <strong>low student–teacher ratio of 8:1</strong>,
+                        ensuring focused mentorship and close monitoring of every learner's progress. Each child
+                        receives:</p>
+                    <ul>
+                        <li>Individualized attention</li>
+                        <li>Regular feedback and performance tracking</li>
+                        <li>Tailored remedial or enrichment support</li>
+                        <li>Increased opportunities to interact and clarify doubts</li>
+                        <li>A learning environment where they feel valued and understood</li>
+                    </ul>
+                    <p>This personalized model not only improves academic outcomes but also builds student
+                        confidence, accountability, and long-term learning habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="section programs-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="programs_title">Our Comprehensive Programs</h2>
+                <p data-i18n="programs_subtitle">Tailored education for every learner's needs</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3 data-i18n="program_academic">Academic Coaching Program</h3>
+                    <p>Structured academic support across key school subjects at primary, middle, and secondary levels:
+                    </p>
+                    <ul>
+                        <li>Concept-based instruction</li>
+                        <li>Reinforcement through daily/weekly revision</li>
+                        <li>Step-by-step problem-solving guidance</li>
+                        <li>Regular assessments and progress evaluation</li>
+                        <li>Board-specific preparation strategies</li>
+                    </ul>
+                    <!-- PHOTO PLACEHOLDER: Add academic coaching photo -->
+                </div>
+                <div class="program-card">
+                    <h3 data-i18n="program_holistic">Holistic Activity Programs</h3>
+                    <p>All activities included to develop well-rounded individuals:</p>
+                    <ul>
+                        <li>Western & Classical Dance</li>
+                        <li>Vocal Music (Singing)</li>
+                        <li>Piano, Guitar, Violin, Tabla</li>
+                        <li>Abacus & Chess</li>
+                        <li>Art, Craft, Painting & Drawing</li>
+                        <li>Karate for fitness & discipline</li>
+                    </ul>
+                    <!-- PHOTO PLACEHOLDER: Add activity program photos -->
+                </div>
+                <div class="program-card">
+                    <h3 data-i18n="program_kindergarten">Kindergarten Foundation Program</h3>
+                    <p>Nurturing and developmentally appropriate program:</p>
+                    <ul>
+                        <li>Early literacy and numeracy</li>
+                        <li>Phonics and vocabulary building</li>
+                        <li>Storytelling and rhyme-based learning</li>
+                        <li>Hands-on sensory development activities</li>
+                        <li>Fine and gross motor skill enhancement</li>
+                    </ul>
+                    <!-- PHOTO PLACEHOLDER: Add kindergarten activities photo -->
+                </div>
+                <div class="program-card">
+                    <h3 data-i18n="program_homeSchool">Home-School Support System</h3>
+                    <p>Comprehensive guidance for homeschooling families:</p>
+                    <ul>
+                        <li>Customized academic plans</li>
+                        <li>Structured lesson sequencing</li>
+                        <li>One-on-one or small-group sessions</li>
+                        <li>Regular assessments and progress documentation</li>
+                        <li>Support for exam pathways and board registrations</li>
+                    </ul>
+                    <!-- PHOTO PLACEHOLDER: Add homeschool support photo -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">80+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Trained Educators</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Activity Programs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 data-i18n="what_students_say">What Our Students & Parents Say</h2>
+            <div class="review-slider">
+                <div class="review-slide active">
+                    <img src="images/review1.jpeg" alt="Riyansh">
+                    <div class="review-content">
+                        <p>"Edu-rays helped me discover my passion for music!"</p>
+                        <span>- Riyansh, Age 12</span>
+                    </div>
+                </div>
+                <div class="review-slide">
+                    <img src="images/review2.jpeg" alt="Arjun">
+                    <div class="review-content">
+                        <p>"The art classes are so much fun and creative!"</p>
+                        <span>- Arjun, Age 9</span>
+                    </div>
+                </div>
+                <div class="review-slide">
+                    <img src="images/review3.jpeg" alt="Priya">
+                    <div class="review-content">
+                        <p>"My grades improved dramatically with their tutoring."</p>
+                        <span>- Priya, Age 14</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Edu-Rays Logo">
+                    <p>A Global Tuition & Holistic Learning Centre transforming education through personalized attention
+                        and comprehensive development programs.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Academic Programs</a></li>
+                        <li><a href="skills.html">Skills Development</a></li>
+                        <li><a href="art-music.html">Art & Music</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 Visakhapatnam, India</li>
+                        <li>📞 <a href="tel:+918978467141">+91 89784 67141</a></li>
+                        <li>✉️ eduraysvizag@gmail.com</li>
+                        <li>🌍 India, Singapore, Australia</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and insights</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/edu.rays/" class="social-icon" aria-label="Instagram">
+                            <img src="images/social-instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61584134417002" class="social-icon" aria-label="Facebook">
+                            <img src="images/social-facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.youtube.com/@Edurays" class="social-icon" aria-label="YouTube">
+                            <img src="images/social-youtube.png" alt="YouTube">
+                        </a>
+                        <a href="https://wa.me/918978467141" class="social-icon" aria-label="WhatsApp">
+                            <img src="images/social-whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://www.linkedin.com/in/rayo-edu-rays-9a9b51392/" class="social-icon" aria-label="LinkedIn">
+                            <img src="images/social-linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Edu-Rays. All rights reserved. | Designed with ❤️ for better education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    (function() {
+        function hideLoader() {
+            try {
+                var loader = document.getElementById('page-loader');
+                if (!loader) return;
+                loader.classList.add('hidden');
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+                loader.style.display = 'none';
+                setTimeout(function() { try { if (loader && loader.parentNode) loader.parentNode.removeChild(loader); } catch(e){} }, 600);
+            } catch (e) { console.error('hideLoader error', e); }
+        }
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            setTimeout(hideLoader, 800);
+        } else {
+            window.addEventListener('DOMContentLoaded', function() { setTimeout(hideLoader, 800); });
+        }
+        setTimeout(hideLoader, 2500);
+    })();
+    </script>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+
+        // Dropdown functionality for mobile
+        dropdowns.forEach(dropdown => {
+            const dropbtn = dropdown.querySelector('.dropbtn');
+
+            if (dropbtn) {
+                dropbtn.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
+
+        // Hero Slider
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            if (slides[n]) slides[n].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto slide every 5 seconds
+        if (slides.length > 0) {
+            setInterval(nextSlide, 5000);
+        }
+
+        // Review Slider
+        const reviewSlides = document.querySelectorAll('.review-slide');
+        let currentReviewSlide = 0;
+
+        function showReviewSlide(n) {
+            reviewSlides.forEach(slide => slide.classList.remove('active'));
+            if (reviewSlides[n]) reviewSlides[n].classList.add('active');
+        }
+
+        function nextReviewSlide() {
+            currentReviewSlide = (currentReviewSlide + 1) % reviewSlides.length;
+            showReviewSlide(currentReviewSlide);
+        }
+
+        // Auto slide reviews every 4 seconds
+        if (reviewSlides.length > 0) {
+            setInterval(nextReviewSlide, 4000);
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 &&
+                nav &&
+                !e.target.closest('nav') &&
+                !e.target.closest('.menu-btn') &&
+                nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        });
+
+        // Stats Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            statNumbers.forEach(stat => {
+                const text = stat.textContent.trim();
+                const target = parseInt(text);
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    stat.textContent = Math.floor(current) + '+';
+                }, 30);
+            });
+        });
+    </script>
+</body>
+
+</html>

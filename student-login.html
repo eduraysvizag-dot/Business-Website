@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Edu-rays</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="page-loader">
+        <div class="book">
+            <div class="book__pg-shadow"></div>
+            <div class="book__pg"></div>
+            <div class="book__pg book__pg--2"></div>
+            <div class="book__pg book__pg--3"></div>
+            <div class="book__pg book__pg--4"></div>
+            <div class="book__pg book__pg--5"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Edu-rays Logo">
+            </a>
+            <button class="menu-btn">
+                <img src="images/menu-logo.png" alt="Menu" class="menu-icon">
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="education.html" data-i18n="nav_education">Education</a></li>
+                    <li><a href="skills.html" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="art-music.html" data-i18n="nav_art_music">Art & Music</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" data-i18n="nav_login">Login ▾</a>
+                        <div class="dropdown-content">
+                            <a href="student-login.html" data-i18n="login_student">Student Login</a>
+                            <a href="parent-login.html" data-i18n="login_parent">Parent Login</a>
+                            <a href="teacher-login.html" data-i18n="login_teacher">Teacher Login</a>
+                        </div>
+                    </li>
+                    <li class="language-selector">
+                        <label for="languageSelect" class="sr-only">Select Language</label>
+                        <select id="languageSelect" title="Select Language">
+                            <option value="en">English</option>
+                            <option value="hi">हिंदी (Hindi)</option>
+                            <option value="te">తెలుగు (Telugu)</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-card">
+            <div class="login-header">
+                <h2 data-i18n="login_student_title">Student Login</h2>
+                <p data-i18n="login_welcome_student">Welcome back, Student!</p>
+            </div>
+            <form onsubmit="event.preventDefault(); alert('Login functionality coming soon!');">
+                <div class="form-group">
+                    <label for="username" data-i18n="label_student_id">Student ID / Email</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your ID"
+                        data-i18n="label_student_id">
+                </div>
+                <div class="form-group">
+                    <label for="password" data-i18n="label_password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password"
+                        data-i18n="label_password">
+                </div>
+                <button type="submit" class="login-btn" data-i18n="btn_login">Login</button>
+            </form>
+            <div class="form-footer">
+                <p><span data-i18n="text_new_student">New student?</span> <a href="contact.html"
+                        data-i18n="link_enroll">Enroll Now</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Edu-Rays Logo">
+                    <p>A Global Tuition & Holistic Learning Centre transforming education through personalized attention
+                        and comprehensive development programs.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Academic Programs</a></li>
+                        <li><a href="skills.html">Skills Development</a></li>
+                        <li><a href="art-music.html">Art & Music</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 Visakhapatnam, India</li>
+                        <li>📞 <a href="tel:+918978467141">+91 89784 67141</a></li>
+                        <li>✉️ eduraysvizag@gmail.com</li>
+                        <li>🌍 India, Singapore, Australia</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and insights</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/edu.rays/" class="social-icon" aria-label="Instagram">
+                            <img src="images/social-instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61584134417002" class="social-icon" aria-label="Facebook">
+                            <img src="images/social-facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.youtube.com/@Edurays" class="social-icon" aria-label="YouTube">
+                            <img src="images/social-youtube.png" alt="YouTube">
+                        </a>
+                        <a href="https://wa.me/918978467141" class="social-icon" aria-label="WhatsApp">
+                            <img src="images/social-whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://www.linkedin.com/in/rayo-edu-rays-9a9b51392/" class="social-icon" aria-label="LinkedIn">
+                            <img src="images/social-linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Edu-Rays. All rights reserved. | Designed with ❤️ for better education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    (function() {
+        function hideLoader() {
+            try {
+                var loader = document.getElementById('page-loader');
+                if (!loader) return;
+                loader.classList.add('hidden');
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+                loader.style.display = 'none';
+                setTimeout(function() { try { if (loader && loader.parentNode) loader.parentNode.removeChild(loader); } catch(e){} }, 600);
+            } catch (e) { console.error('hideLoader error', e); }
+        }
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            setTimeout(hideLoader, 800);
+        } else {
+            window.addEventListener('DOMContentLoaded', function() { setTimeout(hideLoader, 800); });
+        }
+        setTimeout(hideLoader, 2500);
+    })();
+
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    }
+
+    dropdowns.forEach(dropdown => {
+        const dropbtn = dropdown.querySelector('.dropbtn');
+        if (dropbtn) {
+            dropbtn.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

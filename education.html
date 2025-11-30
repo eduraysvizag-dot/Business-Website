@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-rays - Education</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="page-loader">
+        <div class="book">
+            <div class="book__pg-shadow"></div>
+            <div class="book__pg"></div>
+            <div class="book__pg book__pg--2"></div>
+            <div class="book__pg book__pg--3"></div>
+            <div class="book__pg book__pg--4"></div>
+            <div class="book__pg book__pg--5"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Edu-rays Logo">
+            </a>
+            <button class="menu-btn">
+                <img src="images/menu-logo.png" alt="Menu" class="menu-icon">
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="education.html" data-i18n="nav_education">Education</a></li>
+                    <li><a href="skills.html" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="art-music.html" data-i18n="nav_art_music">Art & Music</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" data-i18n="nav_login">Login ▾</a>
+                        <div class="dropdown-content">
+                            <a href="student-login.html" data-i18n="login_student">Student Login</a>
+                            <a href="parent-login.html" data-i18n="login_parent">Parent Login</a>
+                            <a href="teacher-login.html" data-i18n="login_teacher">Teacher Login</a>
+                        </div>
+                    </li>
+                    <li class="language-selector">
+                        <label for="languageSelect" class="sr-only">Select Language</label>
+                        <select id="languageSelect" title="Select Language">
+                            <option value="en">English</option>
+                            <option value="hi">हिंदी (Hindi)</option>
+                            <option value="te">తెలుగు (Telugu)</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="education-section">
+        <div class="container">
+            <h1 data-i18n="edu_title">Education Resources</h1>
+
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="country" data-i18n="label_country">Country:</label>
+                    <select id="country">
+                        <option value="India">India</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="board" data-i18n="label_board">Board:</label>
+                    <select id="board">
+                        <option value="CBSE">CBSE</option>
+                        <option value="ICSE">ICSE</option>
+                        <option value="State">State Board</option>
+                    </select>
+                </div>
+
+                <div class="filter-group hidden" id="stateGroup">
+                    <label for="state" data-i18n="label_state">State:</label>
+                    <select id="state">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="class" data-i18n="label_class">Class:</label>
+                    <select id="class">
+                        <option value="All">All</option>
+                        <option value="1">Class 1</option>
+                        <option value="2">Class 2</option>
+                        <option value="3">Class 3</option>
+                        <option value="4">Class 4</option>
+                        <option value="5">Class 5</option>
+                        <option value="6">Class 6</option>
+                        <option value="7">Class 7</option>
+                        <option value="8">Class 8</option>
+                        <option value="9">Class 9</option>
+                        <option value="10">Class 10</option>
+                        <option value="11">Class 11</option>
+                        <option value="12">Class 12</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="subject" data-i18n="label_subject">Subject:</label>
+                    <select id="subject">
+                        <option value="All">All</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Science">Science</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Social Science">Social Science</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Computer Science">Computer Science</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="resourceDisplay" class="resource-display">
+            </div>
+            <p id="noResourcesMessage" class="hidden" data-i18n="msg_no_resources">No resources found.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Edu-Rays Logo">
+                    <p>A Global Tuition & Holistic Learning Centre transforming education through personalized attention
+                        and comprehensive development programs.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Academic Programs</a></li>
+                        <li><a href="skills.html">Skills Development</a></li>
+                        <li><a href="art-music.html">Art & Music</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 Visakhapatnam, India</li>
+                        <li>📞 <a href="tel:+918978467141">+91 89784 67141</a></li>
+                        <li>✉️ eduraysvizag@gmail.com</li>
+                        <li>🌍 India, Singapore, Australia</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and insights</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/edu.rays/" class="social-icon" aria-label="Instagram">
+                            <img src="images/social-instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61584134417002" class="social-icon" aria-label="Facebook">
+                            <img src="images/social-facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.youtube.com/@Edurays" class="social-icon" aria-label="YouTube">
+                            <img src="images/social-youtube.png" alt="YouTube">
+                        </a>
+                        <a href="https://wa.me/918978467141" class="social-icon" aria-label="WhatsApp">
+                            <img src="images/social-whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://www.linkedin.com/in/rayo-edu-rays-9a9b51392/" class="social-icon" aria-label="LinkedIn">
+                            <img src="images/social-linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Edu-Rays. All rights reserved. | Designed with ❤️ for better education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    (function() {
+        function hideLoader() {
+            try {
+                var loader = document.getElementById('page-loader');
+                if (!loader) return;
+                loader.classList.add('hidden');
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+                loader.style.display = 'none';
+                setTimeout(function() { try { if (loader && loader.parentNode) loader.parentNode.removeChild(loader); } catch(e){} }, 600);
+            } catch (e) { console.error('hideLoader error', e); }
+        }
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            setTimeout(hideLoader, 800);
+        } else {
+            window.addEventListener('DOMContentLoaded', function() { setTimeout(hideLoader, 800); });
+        }
+        setTimeout(hideLoader, 2500);
+    })();
+
+    // --- Education Page Specific JavaScript ---
+    const countrySelect = document.getElementById('country');
+    const boardSelect = document.getElementById('board');
+    const stateSelect = document.getElementById('state');
+    const stateGroup = document.getElementById('stateGroup');
+    const classSelect = document.getElementById('class');
+    const subjectSelect = document.getElementById('subject');
+    const resourceDisplay = document.getElementById('resourceDisplay');
+    const noResourcesMessage = document.getElementById('noResourcesMessage');
+
+    const allResources = [
+        { type: 'Textbook', country: 'India', board: 'CBSE', state: 'N/A', class: '10', subject: 'Mathematics', title: 'NCERT Class 10 Maths', description: 'Official NCERT Textbook for Class 10 Mathematics.', link: 'https://ncert.nic.in/textbook/pdf/jemh1dd.zip' },
+        { type: 'Textbook', country: 'India', board: 'CBSE', state: 'N/A', class: '10', subject: 'Science', title: 'NCERT Class 10 Science', description: 'Official NCERT Textbook for Class 10 Science.', link: 'https://ncert.nic.in/textbook/pdf/jesc1dd.zip' },
+        { type: 'Textbook', country: 'India', board: 'CBSE', state: 'N/A', class: '12', subject: 'Physics', title: 'NCERT Class 12 Physics Part 1', description: 'Official NCERT Textbook for Class 12 Physics (Part 1).', link: 'https://ncert.nic.in/textbook/pdf/leph1dd.zip' },
+        { type: 'Textbook', country: 'India', board: 'CBSE', state: 'N/A', class: '12', subject: 'Chemistry', title: 'NCERT Class 12 Chemistry Part 1', description: 'Official NCERT Textbook for Class 12 Chemistry (Part 1).', link: 'https://ncert.nic.in/textbook/pdf/lech1dd.zip' }
+    ];
+
+    function updateBoardSpecificFilters() {
+        if (boardSelect.value === 'State') {
+            stateGroup.classList.remove('hidden');
+        } else {
+            stateGroup.classList.add('hidden');
+        }
+        filterResources();
+    }
+
+    function filterResources() {
+        const selectedCountry = countrySelect.value;
+        const selectedBoard = boardSelect.value;
+        const selectedState = stateSelect.value;
+        const selectedClass = classSelect.value;
+        const selectedSubject = subjectSelect.value;
+
+        resourceDisplay.innerHTML = '';
+        let foundResources = 0;
+
+        allResources.forEach(resource => {
+            const matchesCountry = (selectedCountry === 'All' || resource.country === selectedCountry);
+            const matchesBoard = (selectedBoard === 'All' || resource.board === selectedBoard);
+            const matchesState = (selectedBoard !== 'State' || resource.state === selectedState);
+            const matchesClass = (selectedClass === 'All' || resource.class === selectedClass);
+            const matchesSubject = (selectedSubject === 'All' || resource.subject === selectedSubject);
+
+            if (matchesCountry && matchesBoard && matchesState && matchesClass && matchesSubject) {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.innerHTML = `
+                <div class="card-content">
+                    <div class="card-top">
+                        <span class="card-title">${String(foundResources + 1).padStart(2, '0')}.</span>
+                        <p>${resource.title}</p>
+                    </div>
+                    <div class="card-bottom">
+                        <p>${resource.description}</p>
+                        <a href="${resource.link}" target="_blank" class="resource-link">
+                            <span class="resource-link-text">View</span>
+                            <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <svg width="48" viewBox="0 -960 960 960" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m393-165 279-335H492l36-286-253 366h154l-36 255Zm-73 85 40-280H160l360-520h80l-40 320h240L400-80h-80Zm153-395Z"></path>
+                    </svg>
+                </div>
+                `;
+                resourceDisplay.appendChild(card);
+                foundResources++;
+            }
+        });
+
+        if (foundResources === 0) {
+            noResourcesMessage.classList.remove('hidden');
+        } else {
+            noResourcesMessage.classList.add('hidden');
+        }
+    }
+
+    boardSelect.addEventListener('change', updateBoardSpecificFilters);
+    stateSelect.addEventListener('change', filterResources);
+    classSelect.addEventListener('change', filterResources);
+    subjectSelect.addEventListener('change', filterResources);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        updateBoardSpecificFilters();
+        filterResources();
+    });
+    </script>
+</body>
+
+</html>
